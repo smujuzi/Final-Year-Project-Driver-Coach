@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/login"
+    >
+
+    <ImageView
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        app:srcCompat="@drawable/steeringwheel"
+        android:id="@+id/imageView13"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:background="@drawable/returnmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu"
+        android:layout_marginBottom="22dp"
+        android:onClick="menu"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp" />
+
+    <Button
+        android:background="@drawable/button"
+        android:text="Gear Change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gear_change"
+        android:onClick="gear_change"
+        android:layout_marginBottom="58dp"
+        android:layout_above="@+id/braking"
+        android:layout_alignLeft="@+id/acceleration"
+        android:layout_alignStart="@+id/acceleration" />
+
+    <Button
+        android:background="@drawable/button"
+        android:text="Braking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/braking"
+        android:onClick="braking"
+        android:layout_marginBottom="45dp"
+        android:layout_above="@+id/menu"
+        android:layout_alignLeft="@+id/gear_change"
+        android:layout_alignStart="@+id/gear_change" />
+
+    <Button
+        android:background="@drawable/button"
+        android:text="Acceleration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/acceleration"
+        android:onClick="acceleration"
+        android:layout_marginBottom="48dp"
+        android:layout_above="@+id/gear_change"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:background="@drawable/toptip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview11"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/acceleration"
+        android:layout_alignEnd="@+id/acceleration"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="53dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/divider"
+        android:layout_marginTop="16dp"
+        android:id="@+id/imageView12"
+        android:layout_marginLeft="80dp"
+        android:layout_marginStart="80dp"
+        android:layout_below="@+id/textview11"
+        android:layout_alignLeft="@+id/acceleration"
+        android:layout_alignStart="@+id/acceleration" />
+
+</RelativeLayout>

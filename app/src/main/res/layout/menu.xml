@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/login"
+    >
+
+    <ImageView
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        app:srcCompat="@drawable/steeringwheel"
+        android:id="@+id/imageView6"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:background="@drawable/button"
+        android:text="Statistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/statistics"
+        android:onClick="statistics"
+        android:layout_above="@+id/sign_out"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="71dp" />
+
+    <Button
+        android:background="@drawable/button"
+        android:text="Top Tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/top_tips"
+        android:onClick="top_tips"
+        android:layout_above="@+id/statistics"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:background="@drawable/button"
+        android:text="Track Record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="track_record"
+        android:id="@+id/track_record"
+        android:layout_above="@+id/top_tips"
+        android:layout_alignLeft="@+id/top_tips"
+        android:layout_alignStart="@+id/top_tips"
+        android:layout_marginBottom="25dp" />
+
+    <Button
+        android:background="@drawable/button"
+        android:text="Begin Drive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="begin_drive"
+        android:id="@+id/begin_drive"
+        android:layout_above="@+id/track_record"
+        android:layout_alignLeft="@+id/track_record"
+        android:layout_alignStart="@+id/track_record"
+        android:layout_marginBottom="35dp" />
+
+    <Button
+        android:background="@drawable/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:id="@+id/sign_out"
+        android:onClick="sign_out"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/statistics"
+        android:layout_alignEnd="@+id/statistics"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp" />
+
+</RelativeLayout>
